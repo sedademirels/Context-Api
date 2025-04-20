@@ -3,6 +3,7 @@ import './App.css'
 import ChangeTheme from './components/ChangeTheme'
 import { ThemeContextProvider } from './contexts/ThemeContext'
 import Footer from './components/Footer'
+import { LangContextProvider } from './contexts/LangContext'
 
 //Web sitenin dark ve light renkleri olsun context. bu yapıyı bir yerde tutmak gerekir. 
 //Bir context dosyası oluşturuyorum. Bu dosyanın içerisine ThemeContext.jsx isimli bir jsx dosya dahil ediyorum.
@@ -14,12 +15,14 @@ import Footer from './components/Footer'
 function App() {
   
   return (
-    <div>
+    
+      <LangContextProvider>
       <ThemeContextProvider>
       <ChangeTheme/>
       <Footer/>
       </ThemeContextProvider>
-    </div>
+      </LangContextProvider>
+    
   )
 }
 
