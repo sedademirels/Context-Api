@@ -4,6 +4,7 @@ import ChangeTheme from './components/ChangeTheme'
 import { ThemeContextProvider } from './contexts/ThemeContext'
 import Footer from './components/Footer'
 import { LangContextProvider } from './contexts/LangContext'
+import ChangeLang from './components/ChangeLang'
 
 //Web sitenin dark ve light renkleri olsun context. bu yapıyı bir yerde tutmak gerekir. 
 //Bir context dosyası oluşturuyorum. Bu dosyanın içerisine ThemeContext.jsx isimli bir jsx dosya dahil ediyorum.
@@ -19,6 +20,7 @@ function App() {
       <LangContextProvider>
       <ThemeContextProvider>
       <ChangeTheme/>
+      <ChangeLang/>
       <Footer/>
       </ThemeContextProvider>
       </LangContextProvider>
