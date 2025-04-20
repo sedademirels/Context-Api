@@ -6,11 +6,12 @@ import ThemeContext from '../contexts/ThemeContext';
 
 function ChangeTheme() {
 
-    const data= useContext(ThemeContext);
+    const {theme, toggleTheme}= useContext(ThemeContext);
 
   return (
     <div>
-        <button >ChangeTheme</button>
+        <div>Aktif Tema : {theme}</div>
+        <button onClick={ toggleTheme}>ChangeTheme</button>
     </div>
   )
 }

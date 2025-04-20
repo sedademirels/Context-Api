@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import ChangeTheme from './components/ChangeTheme'
 import { ThemeContextProvider } from './contexts/ThemeContext'
+import Footer from './components/Footer'
 
 //Web sitenin dark ve light renkleri olsun context. bu yapıyı bir yerde tutmak gerekir. 
 //Bir context dosyası oluşturuyorum. Bu dosyanın içerisine ThemeContext.jsx isimli bir jsx dosya dahil ediyorum.
@@ -16,6 +17,7 @@ function App() {
     <div>
       <ThemeContextProvider>
       <ChangeTheme/>
+      <Footer/>
       </ThemeContextProvider>
     </div>
   )
